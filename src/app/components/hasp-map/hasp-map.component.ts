@@ -6,28 +6,36 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./hasp-map.component.scss']
 })
 export class HaspMapComponent implements OnInit {
-  keyValue: any;
+  //keyValue: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.createHashMap('aftab');
+    let result = this.createHashMap('sajed');
+    console.log(result);
   }
 
-  createHashMap(sampleString: string) {
+  createHashMap(string: string) {
     let hashMap = new Map<string, number>();
-    for (let character of sampleString) {
+    let keyValue: number | undefined = 0;
+    for (let character of string) {
       if (!hashMap.has(character)) {
         hashMap.set(character, 1);
       } else {
-        this.keyValue  = hashMap.get(character);
-        hashMap.set(character, this.keyValue + 1);
+        keyValue  = hashMap.get(character);
+        // @ts-ignore
+        hashMap.set(character, keyValue + 1);
       }
     }
 
-    for(let [key, value] of hashMap){
-      console.log(key,':', value);
+    let count = -1;
+    for (let character of string) {
+      count = count + 1;
+      if(hashMap.get(character) === 1){
+        return count;
+      }
     }
+    return -1;
   }
 
 }
