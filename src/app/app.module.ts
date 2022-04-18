@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HaspMapComponent } from './components/hasp-map/hasp-map.component';
 import { RunLengthEncodingComponent } from './components/run-length-encoding/run-length-encoding.component';
+import { SortArrayComponent } from './components/sort-array/sort-array.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HaspMapComponent,
-    RunLengthEncodingComponent
+    RunLengthEncodingComponent,
+    SortArrayComponent
   ],
   imports: [
     BrowserModule,
