@@ -7,6 +7,7 @@ import { HaspMapComponent } from './components/hasp-map/hasp-map.component';
 import { RunLengthEncodingComponent } from './components/run-length-encoding/run-length-encoding.component';
 import { SortArrayComponent } from './components/sort-array/sort-array.component';
 import { MaxSubsetSumNoAdjacentComponent } from './components/max-subset-sum-no-adjacent/max-subset-sum-no-adjacent.component';
+import { SmallPositiveIntegerComponent } from './components/small-positive-integer/small-positive-integer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MaxSubsetSumNoAdjacentComponent } from './components/max-subset-sum-no-
     HaspMapComponent,
     RunLengthEncodingComponent,
     SortArrayComponent,
-    MaxSubsetSumNoAdjacentComponent
+    MaxSubsetSumNoAdjacentComponent,
+    SmallPositiveIntegerComponent
   ],
   imports: [
     BrowserModule,
