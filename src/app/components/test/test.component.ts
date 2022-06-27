@@ -11,9 +11,9 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {
     let animals = ['jaguar', 'eagle'];
-//Missing Line
+    //Missing Line
     animals.pop();
-console.log(animals.pop()); //Prints jaguar
+    console.log(animals.pop()); //Prints jaguar
   }
   test(){
    return [] === [];
