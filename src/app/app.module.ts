@@ -10,6 +10,7 @@ import { MaxSubsetSumNoAdjacentComponent } from './components/max-subset-sum-no-
 import { SmallPositiveIntegerComponent } from './components/small-positive-integer/small-positive-integer.component';
 import { TestComponent } from './components/test/test.component';
 import { MaxSubarrayComponent } from './components/max-subarray/max-subarray.component';
+import { WordCountComponent } from './components/word-count/word-count.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MaxSubarrayComponent } from './components/max-subarray/max-subarray.com
     MaxSubsetSumNoAdjacentComponent,
     SmallPositiveIntegerComponent,
     TestComponent,
-    MaxSubarrayComponent
+    MaxSubarrayComponent,
+    WordCountComponent
   ],
   imports: [
     BrowserModule,
