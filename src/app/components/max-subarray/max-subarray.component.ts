@@ -16,7 +16,7 @@ export class MaxSubarrayComponent implements OnInit {
     console.log(this.maxSubArray([-1]));
   }
 
-  maxSubArray(nums: any) {
+  maxSubArray(nums: number[]) {
     let currentSum = 0;
     let maxSum = Number.MIN_SAFE_INTEGER;
     for (let num of nums) {
