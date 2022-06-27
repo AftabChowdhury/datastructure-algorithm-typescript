@@ -11,6 +11,7 @@ import { SmallPositiveIntegerComponent } from './components/small-positive-integ
 import { TestComponent } from './components/test/test.component';
 import { MaxSubarrayComponent } from './components/max-subarray/max-subarray.component';
 import { WordCountComponent } from './components/word-count/word-count.component';
+import { PalindromeCheckComponent } from './components/palindrome-check/palindrome-check.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { WordCountComponent } from './components/word-count/word-count.component
     SmallPositiveIntegerComponent,
     TestComponent,
     MaxSubarrayComponent,
-    WordCountComponent
+    WordCountComponent,
+    PalindromeCheckComponent
   ],
   imports: [
     BrowserModule,
