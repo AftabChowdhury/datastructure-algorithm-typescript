@@ -13,6 +13,7 @@ import { MaxSubarrayComponent } from './components/max-subarray/max-subarray.com
 import { WordCountComponent } from './components/word-count/word-count.component';
 import { PalindromeCheckComponent } from './components/palindrome-check/palindrome-check.component';
 import { CaesarCipherEncryptorComponent } from './components/caesar-cipher-encryptor/caesar-cipher-encryptor.component';
+import { FirstNonRepeatingCharacterComponent } from './components/first-non-repeating-character/first-non-repeating-character.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CaesarCipherEncryptorComponent } from './components/caesar-cipher-encry
     MaxSubarrayComponent,
     WordCountComponent,
     PalindromeCheckComponent,
-    CaesarCipherEncryptorComponent
+    CaesarCipherEncryptorComponent,
+    FirstNonRepeatingCharacterComponent
   ],
   imports: [
     BrowserModule,
