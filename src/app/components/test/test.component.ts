@@ -10,17 +10,52 @@ export class TestComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let animals = ['jaguar', 'eagle'];
-    //Missing Line
-    animals.pop();
-    console.log(animals.pop()); //Prints jaguar
-  }
-  test(){
-   return [] === [];
+    //console.log(this.test(["gin","zen","gig","msg"]));
+    console.log(this.test(["msg30", "gig53"]));
+    //console.log(this.test(["gin","cab"]));
   }
 
-  logThis() {
-    console.log(this);
-  }
+  test(listwords: any){
+    if (listwords.length == 1) return 1;
 
+			const obj: any = {
+				a: ".-",
+				b: "-...",
+				c: "-.-.",
+				d: "-..",
+				e: ".",
+				f: "..-.",
+				g: "--.",
+				h: "....",
+				i: "..",
+				j: ".---",
+				k: "-.-",
+				l: ".-..",
+				m: "--",
+				n: "-.",
+				o: "---",
+				p: ".--.",
+				q: "--.-",
+				r: ".-.",
+				s: "...",
+				t: "-",
+				u: "..-",
+				v: "...-",
+				w: ".--",
+				x: "-..-",
+				y: "-.--",
+				z: "--.."
+			};
+
+			let finalArr = [];
+			for (let i = 0; i < listwords.length; i++) {
+				let temp = "";
+				for (const j of listwords[i]) {
+				  if(!isNaN(j)) continue;
+          temp = temp + obj[j];
+				}
+				finalArr.push(temp)
+			}
+			return new Set(finalArr).size;
+  }
 }
